@@ -40,12 +40,17 @@ async function checkWeather(city){
 
     }
 }
-searchBtn.addEventListener('click', () => {
+function handleSearch() {
     let searchValue = document.querySelector(".searchBox").value;
     checkWeather(searchValue.trim());
     document.querySelector(".searchBox").value = "";
-})
-
+}
+searchBtn.addEventListener('click', handleSearch);
+document.querySelector('.searchBox').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        handleSearch();
+    }
+});
 
 
 
