@@ -16,9 +16,9 @@
     justify-content: center;
     align-items: center;
 }
-.container{
-    min-width: 500px;
-    width: 500px;
+.container {
+    max-width: 500px;
+    width: 400px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     position: relative;
@@ -135,4 +135,53 @@
     font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
+}
+/* Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: none;
+    }
+    .input-group input {
+        padding: 10px 30px 10px 30px;
+    }
+    .input-group span i {
+        top: 32px;
+        left: 26px;
+        font-size: 22px;
+    }
+    .input-group button {
+        top: 25px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        font-size: 26px;
+    }
+    .temp h1 {
+        font-size: 48px;
+    }
+    .temp p {
+        font-size: 16px;
+    }
+    .humidity-box span,
+    .wind-box span {
+        font-size: 40px;
+    }
+    .humidity h3,
+    .wind h3 {
+        font-size: 20px;
+    }
+    .humidity p,
+    .wind p {
+        font-size: 14px;
+    }
+    .error {
+        padding: 30px;
+    }
+    .error h3 {
+        font-size: 16px;
+    }
+    .error img {
+        max-width: 100%;
+    }
 }
