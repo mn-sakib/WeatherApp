@@ -44,6 +44,9 @@
 	background: transparent;
 	color: rgb(253, 253, 253);
 }
+.searchBox::placeholder{
+    color: rgb(253, 253, 253);
+}
 .input-group span i {
 	font-size: 30px;
 	position: absolute;
