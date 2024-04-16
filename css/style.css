@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    background-image: url(./../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    min-width: 500px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    position: relative;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.input-group input {
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	outline: none;
+	width: 100%;
+	font-size: 18px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	padding: 10px 45px 10px 45px;
+	background: transparent;
+	color: rgb(253, 253, 253);
+}
+.input-group span i {
+	font-size: 30px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	color: rgb(255, 255, 255);
+}
+.input-group button {
+	font-size: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	top: 22px;
+	right: 30px;
+	cursor: pointer;
+	color: rgb(255, 255, 255);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.temp{
+    text-align: center;
+    padding:30px;
+}
+.tempIcon{
+    max-width: 50%;
+}
+.temp h1{
+    font-size: 68px;
+    color: #ffffff;
+}
+.temp p{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.temp-details{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.humidity-box, .wind-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.humidity-box span, .wind-box span{
+    font-size: 60px;
+    color: #ffffff;
+}
+.humidity h3, .wind h3{
+    font-size: 25px;
+    color: #ffffff;
+}
+.humidity p, .wind p{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.humidity, .wind{
+    padding: 10px;
+    align-self: center;
+}
+.temperature-box{
+    display: none;
+}
+.error{
+    text-align: center;
+    padding: 50px;
+    display: none;
+}
+.error img{
+    max-width: 80%;
+}
+.error h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
